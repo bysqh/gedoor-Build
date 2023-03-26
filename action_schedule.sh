@@ -4,13 +4,13 @@
 function set_env() { echo "$1=$2" >> $GITHUB_ENV; }
 
 APP_NAME="legado"
-APP_GIT_URL="https://github.com/gedoor/legado.git"
+APP_GIT_URL="https://github.com/bysqh/legado.git"
 APP_SUFFIX="A"
 APP_WORKSPACE="/opt/$APP_NAME"
 APP_UPLOAD="$APP_WORKSPACE/app/build/outputs/apk/app/release"
 APP_LAUNCH_NAME="阅读.$APP_SUFFIX"
 
-GITHUB_API_LATEST="https://api.github.com/repos/gedoor/legado/releases/latest"
+GITHUB_API_LATEST="https://api.github.com/repos/bysqh/legado/releases/latest"
 
 set_env APP_NAME        $APP_NAME
 set_env APP_GIT_URL     $APP_GIT_URL
